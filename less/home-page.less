@@ -1,0 +1,176 @@
+main{
+	color:white;
+.container{
+	margin:50px;
+	.displayFlex(center,row);
+	align-items:center;
+	@media@mobile{
+	.displayFlex(space-between,column);
+	align-items:center;
+	}
+	h2{
+		font-family:'Metal Mania', cursive;
+	}
+	.info{
+		text-align:center;
+		width:30%;
+		height:20vh;
+		margin:0px 5px;
+		padding:none;
+		background-color:@hackerGradient;
+		@media@mobile{
+		width:90%;
+		height:auto;
+		
+		}
+	}
+	.fun{
+		margin:0px 5px;
+	text-align:center;
+		width:30%;
+		height:20vh;
+		padding:none;
+		background-color:@hackerGradient;
+		@media@mobile{
+		width:90%;
+		height:auto;
+		
+		}
+	}
+	.image{		
+	margin:0px 5px;
+	height:90vh;
+	width:30%;
+	background-image:url('https://images.unsplash.com/photo-1579117517382-78401a144da5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;		
+	margin:none;
+	padding:none;
+	@media@mobile{
+	height:25rem;
+	background-image:url('https://images.unsplash.com/photo-1579117517382-78401a144da5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+	background-repeat:no-repeat;
+	-webkit-background-size:contain;
+	-moz-background-size:contain;
+	-o-background-size:contain;
+	background-size:contain;	
+	width:90%;
+	margin:50px 0px;
+		}
+	
+	h2{
+	text-align:center;
+		font-family:'Metal Mania', cursive;
+		color:@hackerRed;
+	}
+	p{
+		color:black;
+	}
+	a{	margin:10px;
+		text-decoration:none;
+		color:black;
+		font-size:3rem;
+		font-family:'Metal Mania', cursive;
+		border-bottom:solid 2px lightgrey;
+		&:hover{
+		color:@hackerRed;
+		}
+	}
+	}
+	
+	
+	span{
+	color:black;
+		font-size:3.5rem;
+		font-family:'Metal Mania', cursive;
+	}	
+	}
+	.info{
+	margin-top:30px;
+	.bground();
+	}
+}
+
+			
+			.container2{
+				.displayFlex(center,column);
+				align-items:center;
+			.div3{
+			margin:30px;
+			.displayFlex(center,column);
+			align-items:center;
+			background-image:url('');
+					-webkit-background-size:cover;
+					-moz-background-size:cover;
+					-o-background-size:cover;
+					background-size:cover;
+				background-repeat:no-repeat;
+				width:80%;
+				height:40rem;
+				color:#F1F0EE;
+				h2{
+				text-shadow:4.5rem;
+				font-size:4.5rem;
+				font-family:'Metal Mania', cursive;
+					background-color:rgba(0,0,0,.7)
+				}
+				p{
+				background-color:rgba(0,0,0,.7)
+				}
+			}
+		#contact{
+			.displayFlex(center,column);
+			align-items:center;
+			background-image:@hackerGradient;
+			color:white;
+			margin-bottom:25px;
+			width:100%;
+			height:30vh;
+			p{
+				margin:10px;
+			}
+		}
+		}
+	
+.main2{
+	.displayFlex(space-evenly,column);
+	align-items:center;
+	.student{
+		.displayFlex(center,column);
+		align-items:center;
+		color:black;
+		.bground();
+		margin:50px;
+		width:50%;
+		padding:20px;
+		@media@mobile{
+		.displayFlex(center,column);
+		width:90%;
+		margin:50px 0px;;
+		padding:0;
+		img{
+			width:40%;
+		}
+		}
+	}
+}
+
+	button{
+	background-color:white;
+	text-decoration:none;
+	font-size:3rem;
+	border-radius:30px;
+	margin:10px;
+	&:hover {
+		background-color:@hackerRed;
+	}
+	@media@mobile{
+	&:hover{
+	backgound-color:white;
+	}
+	font-size:1.8rem;
+	}
+}
