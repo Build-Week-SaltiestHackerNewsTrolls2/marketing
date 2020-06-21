@@ -171,7 +171,7 @@ footer {
   margin: 0px 1%;
   padding: 0px 18px;
 }
-@media (min-width:900px) {
+@media (min-width:1000px) {
   footer {
     margin: 0px 1%;
     width: auto;
@@ -207,8 +207,9 @@ main {
 }
 main .container {
   margin: 50px;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -222,6 +223,20 @@ main .container {
     align-items: center;
   }
 }
+@media (max-width:800px) {
+  main .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media (min-width:1000px) {
+  main .container {
+    margin-bottom: 0;
+  }
+}
 main .container h2 {
   font-family: 'Metal Mania', cursive;
 }
@@ -231,9 +246,15 @@ main .container .info {
   height: 20vh;
   margin: 0px 5px;
   padding: none;
-  background-color: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.07));
 }
 @media (max-width:500px) {
+  main .container .info {
+    width: 90%;
+    height: auto;
+  }
+}
+@media (max-width:800px) {
   main .container .info {
     width: 90%;
     height: auto;
@@ -245,7 +266,6 @@ main .container .fun {
   width: 30%;
   height: 20vh;
   padding: none;
-  background-color: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
 }
 @media (max-width:500px) {
   main .container .fun {
@@ -253,18 +273,30 @@ main .container .fun {
     height: auto;
   }
 }
+@media (max-width:800px) {
+  main .container .fun {
+    width: 90%;
+    height: auto;
+  }
+}
 main .container .image {
-  margin: 0px 5px;
-  height: 90vh;
-  width: 30%;
+  margin: 0px 10px;
+  width: 40%;
+  height: 30rem;
   background-image: url('https://images.unsplash.com/photo-1579117517382-78401a144da5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   margin: none;
   padding: none;
+}
+@media (min-width:1000px) {
+  main .container .image {
+    margin: 0px 50px;
+    width: 31%;
+    height: 40rem;
+    background-size: cover;
+    height: 80vh;
+  }
 }
 @media (max-width:500px) {
   main .container .image {
@@ -279,12 +311,19 @@ main .container .image {
     margin: 50px 0px;
   }
 }
+@media (max-width:800px) {
+  main .container .image {
+    width: 90%;
+    margin: 15px 0px;
+  }
+}
 main .container .image h2 {
   text-align: center;
   font-family: 'Metal Mania', cursive;
   color: #d80000;
 }
 main .container .image p {
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.07));
   color: black;
 }
 main .container .image a {
@@ -317,18 +356,12 @@ main .info {
 .container2 .div3 {
   margin: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url('');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 80%;
-  height: 40rem;
+  height: 30rem;
   color: #F1F0EE;
 }
 .container2 .div3 h2 {
@@ -338,7 +371,23 @@ main .info {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .container2 .div3 p {
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.07));
+}
+@media (min-width:1000px) {
+  .container2 .div3 p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:800px) {
+  .container2 .div3 {
+    height: auto;
+    margin-right: 50px;
+  }
+}
+@media (max-width:500px) {
+  .container2 .div3 {
+    height: auto;
+  }
 }
 .container2 #contact {
   display: flex;
@@ -354,6 +403,11 @@ main .info {
 }
 .container2 #contact p {
   margin: 10px;
+}
+@media (max-width:500px) {
+  .container2 #contact {
+    height: auto;
+  }
 }
 .main2 {
   display: flex;
@@ -389,9 +443,9 @@ main .info {
   }
 }
 button {
-  background-color: white;
+  background-color: #228C22;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2rem;
   border-radius: 30px;
   margin: 10px;
 }
@@ -403,7 +457,7 @@ button:hover {
     font-size: 1.8rem;
   }
   button:hover {
-    backgound-color: white;
+    backgound-color: #228C22;
   }
 }
 @font-face {
