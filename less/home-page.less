@@ -5,7 +5,7 @@ main{
 	margin:50px;
 	height:100%;
 	.displayFlex(space-between,row);
-	align-items:center;
+	align-items:flex-start;
 	@media@mobile{
 	.displayFlex(space-between,column);
 	align-items:center;
@@ -40,7 +40,7 @@ main{
 		margin:0px 5px;
 	text-align:center;
 		width:30%;
-		height:20vh;
+		height:auto;
 		padding:none;
 		@media@mobile{
 		width:90%;
@@ -50,6 +50,10 @@ main{
 			@media@tablet{
 				width:90%;
 		height:auto;
+		}
+		@media@desktop{
+			font-size:1.2rem;
+			height:20vh;
 		}
 	}
 	.image{
@@ -64,9 +68,8 @@ main{
 	@media@desktop{
 		margin:0px 50px;
 		width:31%;
-		height:40rem;
 		background-size:cover;
-		height:80vh;
+		height:40rem;
 	}
 	@media@mobile{
 	height:25rem;
@@ -156,7 +159,7 @@ main{
 			color:white;
 			margin-bottom:25px;
 			width:100%;
-			height:30vh;
+			height:20rem;
 			p{
 				margin:10px;
 			}
@@ -174,10 +177,31 @@ main{
 		align-items:center;
 		color:black;
 		.bground();
+		width:90%;
 		margin:50px;
 		width:50%;
 		padding:20px;
+		img{
+		width:60%;
+		}
+		@media@desktop{
+			.displayFlex(center,column);
+		align-items:center;
+		color:black;
+		.bground();
+		margin:50px;
+		width:50%;
+		padding:20px;
+		}
 		@media@mobile{
+		.displayFlex(center,column);
+		width:90%;
+		margin:50px 0px;;
+		padding:0;
+		img{
+			width:40%;
+		}}
+		@media@tablet{
 		.displayFlex(center,column);
 		width:90%;
 		margin:50px 0px;;
@@ -186,7 +210,7 @@ main{
 			width:40%;
 		}
 		}
-	}
+}
 }
 
 	button{
