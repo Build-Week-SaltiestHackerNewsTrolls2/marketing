@@ -11,7 +11,7 @@
 	color:@hackerRed;
 	@media@mobile{
 	.displayFlex(space-between,column);
-	align-items:center;
+	align-items:flex-start;
 	}
 		h1{
 			font-family: 'Metal Mania', cursive;
@@ -28,23 +28,87 @@
 	}
 	.main-nav{
 	font-size:2rem;
+	list-style:none;
+		ul{
+		.displayFlex(space-between,row);
+		visibility:visible;
+		@media@mobile{
+			visibility:hidden;
+			}
+			@media@desktop{
+				visibility:visible;
+			}
+			}
+	li{
+		list-style:none;
+
+	}
 		a{
 	margin-right:0px;
 		margin-left:40px;
 		margin-top:30px;
 		text-decoration:none;
 		color:white;
+		
 		&:hover{
 			color:@hackerRed;
 			}
-		@media@mobile{
-			display:block;
-		}	
+			}
+			}	
+				
+	/*		.div3{
+			.dropdown-menu{
+			display:none;
+			font-size:2rem;
+			@media@desktop{
+				display:none;
+			}
+		a{
+	margin-right:0px;
+		margin-left:40px;
+		margin-top:30px;
+		text-decoration:none;
+		color:white;
+
+		}
 		button{
 		text-align:center;
+					@media@mobile{
+				display:block;
+			}
 		}
 		}
+		}*/
+				button{
+		text-align:center;
+			}
+			
+		.buttonNav{
+		position:inherit;
+			@media@desktop{
+			position:absolute;
+			right:5px;
+			}
+			color:white;
+			@media@mobile{
+				position:inherit;
+				.displayFlex(center,row);
+				color:white;
+				font-size:3rem;
+				span{
+					font-size:1rem;
+				}
+			
+			}
 		}
+		}
+		.div1{
+			@media@mobile{
+				.displayFlex(space-between,row);
+				align-items:flex-start;
+			}
+			}
+			
 	span{
 	width:80%;
 	@media@mobile{
@@ -52,4 +116,3 @@
 		margin:10px;
 	}
 	}
-}

@@ -107,6 +107,29 @@ table {
   -o-background-size: cover;
   background-size: cover;
   color: #d80000;
+  /*		.div3{
+			.dropdown-menu{
+			display:none;
+			font-size:2rem;
+			@media@desktop{
+				display:none;
+			}
+		a{
+	margin-right:0px;
+		margin-left:40px;
+		margin-top:30px;
+		text-decoration:none;
+		color:white;
+
+		}
+		button{
+		text-align:center;
+					@media@mobile{
+				display:block;
+			}
+		}
+		}
+		}*/
 }
 @media (max-width:500px) {
   .main-header {
@@ -114,7 +137,7 @@ table {
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 .main-header h1 {
@@ -135,6 +158,27 @@ table {
 }
 .main-header .main-nav {
   font-size: 2rem;
+  list-style: none;
+}
+.main-header .main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  visibility: visible;
+}
+@media (max-width:500px) {
+  .main-header .main-nav ul {
+    visibility: hidden;
+  }
+}
+@media (min-width:1000px) {
+  .main-header .main-nav ul {
+    visibility: visible;
+  }
+}
+.main-header .main-nav li {
+  list-style: none;
 }
 .main-header .main-nav a {
   margin-right: 0px;
@@ -146,19 +190,47 @@ table {
 .main-header .main-nav a:hover {
   color: #d80000;
 }
-@media (max-width:500px) {
-  .main-header .main-nav a {
-    display: block;
-  }
-}
-.main-header .main-nav a button {
+.main-header button {
   text-align: center;
 }
-.main-header span {
+.main-header .buttonNav {
+  position: inherit;
+  color: white;
+}
+@media (min-width:1000px) {
+  .main-header .buttonNav {
+    position: absolute;
+    right: 5px;
+  }
+}
+@media (max-width:500px) {
+  .main-header .buttonNav {
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 3rem;
+  }
+  .main-header .buttonNav span {
+    font-size: 1rem;
+  }
+}
+@media (max-width:500px) {
+  .div1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+span {
   width: 80%;
 }
 @media (max-width:500px) {
-  .main-header span {
+  span {
     display: block;
     margin: 10px;
   }
@@ -212,7 +284,7 @@ main .container {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 @media (max-width:500px) {
   main .container {
@@ -264,7 +336,7 @@ main .container .fun {
   margin: 0px 5px;
   text-align: center;
   width: 30%;
-  height: 20vh;
+  height: auto;
   padding: none;
 }
 @media (max-width:500px) {
@@ -277,6 +349,12 @@ main .container .fun {
   main .container .fun {
     width: 90%;
     height: auto;
+  }
+}
+@media (min-width:1000px) {
+  main .container .fun {
+    font-size: 1.2rem;
+    height: 20vh;
   }
 }
 main .container .image {
@@ -293,9 +371,8 @@ main .container .image {
   main .container .image {
     margin: 0px 50px;
     width: 31%;
-    height: 40rem;
     background-size: cover;
-    height: 80vh;
+    height: 40rem;
   }
 }
 @media (max-width:500px) {
@@ -399,7 +476,7 @@ main .info {
   color: white;
   margin-bottom: 25px;
   width: 100%;
-  height: 30vh;
+  height: 20rem;
 }
 .container2 #contact p {
   margin: 10px;
@@ -424,11 +501,43 @@ main .info {
   align-items: center;
   color: black;
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.07));
+  width: 90%;
   margin: 50px;
   width: 50%;
   padding: 20px;
 }
+.main2 .student img {
+  width: 60%;
+}
+@media (min-width:1000px) {
+  .main2 .student {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: black;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.07));
+    margin: 50px;
+    width: 50%;
+    padding: 20px;
+  }
+}
 @media (max-width:500px) {
+  .main2 .student {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px 0px;
+    padding: 0;
+  }
+  .main2 .student img {
+    width: 40%;
+  }
+}
+@media (max-width:800px) {
   .main2 .student {
     display: flex;
     justify-content: center;
