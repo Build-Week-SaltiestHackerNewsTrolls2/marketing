@@ -11,7 +11,8 @@ main{
 	align-items:center;
 	}
 	@media@tablet{
-		.displayFlex(space-between,column);
+		.displayFlex(center,column);
+		align-items:center;
 	align-items:center;
 	}
 	@media@desktop{
@@ -23,17 +24,41 @@ main{
 	.info{
 		text-align:center;
 		width:30%;
-		height:20vh;
-		margin:0px 5px;
+		.displayFlex(space-evenly,row);
+		align:items:center;
+		margin:20px 5px;
 		padding:none;
+		flex-wrap:none;
 		.bground();
 		@media@mobile{
+		.displayFlex(space-evenly,column);
 		width:90%;
 		height:auto;
 		}
 		@media@tablet{
+		.displayFlex(space-evenly,column);
 				width:90%;
 		height:auto;
+		}
+		@media@desktop{
+		.displayFlex(space-evenly,column);
+			width:25%;
+			height:auto;
+		}
+		.exampleImages {
+		display:none;
+		width:100%;
+		height:20%;
+		margin-top:20px;
+		object-fit:contain;
+			img {
+			width:100%;
+			object-fit:contain;
+			transition:all .2s ease-in;
+			&:hover{
+				transform:scale(1.1);
+			}
+			}
 		}
 	}
 	.fun{
@@ -54,6 +79,11 @@ main{
 		@media@desktop{
 			font-size:1.2rem;
 			height:20vh;
+			transition:all .2s ease-in;
+			&:hover{
+				transform:scale(1.1);
+			}
+			
 		}
 	}
 	.image{
@@ -70,6 +100,11 @@ main{
 		width:31%;
 		background-size:cover;
 		height:40rem;
+		transition:all .2s ease-in;
+			&:hover{
+				transform:scale(1.1);
+			}
+			
 	}
 	@media@mobile{
 	height:25rem;
