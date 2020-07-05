@@ -1,1 +1,2 @@
 # marketing
+Went with a sleek futuristic style , by choice of the team in oppose to two other ideas, Added some light Javascript uses to allow a toggle menu and basic window pop-ups. I also included some basic CSS features like Hover attributes to re-size certain elements , The TH is not a trade-mark it is a basic google font I imported. Over-all I feel troll-hub's landing page was a success and that it is an example for basic web-site functionality and making multiple elements responsive ll the way down.
