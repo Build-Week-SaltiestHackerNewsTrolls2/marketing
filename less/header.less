@@ -11,7 +11,7 @@
 	color:@hackerRed;
 	@media@mobile{
 	.displayFlex(space-between,column);
-	align-items:flex-start;
+	align-items:center;
 	}
 		h1{
 			font-family: 'Metal Mania', cursive;
@@ -25,60 +25,32 @@
 	.div1{
 	.displayFlex(space-evenly,row);
 	align-items:center;
+	
 	}
+
 	.main-nav{
 	font-size:2rem;
 	list-style:none;
-		ul{
-		.displayFlex(space-between,row);
-		visibility:visible;
-		@media@mobile{
-			visibility:hidden;
-			}
-			@media@desktop{
-				visibility:visible;
-			}
-			}
-	li{
-		list-style:none;
-
+	@media@mobile{
+		.displayFlex(space-evenly,column);
+		align-items:center;
+		text-align:cener;
 	}
 		a{
-	margin-right:0px;
+		margin-right:20px;
 		margin-left:40px;
 		margin-top:30px;
 		text-decoration:none;
 		color:white;
-		
+		@media@mobile{
+			display:block;
+			text-align:center;
+		}
 		&:hover{
 			color:@hackerRed;
 			}
 			}
 			}	
-				
-	/*		.div3{
-			.dropdown-menu{
-			display:none;
-			font-size:2rem;
-			@media@desktop{
-				display:none;
-			}
-		a{
-	margin-right:0px;
-		margin-left:40px;
-		margin-top:30px;
-		text-decoration:none;
-		color:white;
-
-		}
-		button{
-		text-align:center;
-					@media@mobile{
-				display:block;
-			}
-		}
-		}
-		}*/
 				button{
 		text-align:center;
 			}
@@ -87,7 +59,7 @@
 		position:inherit;
 			@media@desktop{
 			position:absolute;
-			right:5px;
+			right:25px;
 			}
 			color:white;
 			@media@mobile{

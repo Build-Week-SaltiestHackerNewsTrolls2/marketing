@@ -91,7 +91,7 @@ table {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/muli/v21/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
 }
 .main-header {
   margin: 20px;
@@ -107,29 +107,6 @@ table {
   -o-background-size: cover;
   background-size: cover;
   color: #d80000;
-  /*		.div3{
-			.dropdown-menu{
-			display:none;
-			font-size:2rem;
-			@media@desktop{
-				display:none;
-			}
-		a{
-	margin-right:0px;
-		margin-left:40px;
-		margin-top:30px;
-		text-decoration:none;
-		color:white;
-
-		}
-		button{
-		text-align:center;
-					@media@mobile{
-				display:block;
-			}
-		}
-		}
-		}*/
 }
 @media (max-width:500px) {
   .main-header {
@@ -137,7 +114,7 @@ table {
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 .main-header h1 {
@@ -160,32 +137,28 @@ table {
   font-size: 2rem;
   list-style: none;
 }
-.main-header .main-nav ul {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  visibility: visible;
-}
 @media (max-width:500px) {
-  .main-header .main-nav ul {
-    visibility: hidden;
+  .main-header .main-nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: cener;
   }
-}
-@media (min-width:1000px) {
-  .main-header .main-nav ul {
-    visibility: visible;
-  }
-}
-.main-header .main-nav li {
-  list-style: none;
 }
 .main-header .main-nav a {
-  margin-right: 0px;
+  margin-right: 20px;
   margin-left: 40px;
   margin-top: 30px;
   text-decoration: none;
   color: white;
+}
+@media (max-width:500px) {
+  .main-header .main-nav a {
+    display: block;
+    text-align: center;
+  }
 }
 .main-header .main-nav a:hover {
   color: #d80000;
@@ -200,7 +173,7 @@ table {
 @media (min-width:1000px) {
   .main-header .buttonNav {
     position: absolute;
-    right: 5px;
+    right: 25px;
   }
 }
 @media (max-width:500px) {
@@ -449,7 +422,11 @@ main .container .image p {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.07));
   color: black;
   padding: 0px;
-  max-width: 90%;
+}
+@media (max-width:500px) {
+  main .container .image p {
+    max-width: 90%;
+  }
 }
 main .container .image a {
   margin: 10px;
@@ -556,6 +533,13 @@ main .info {
 }
 .main2 .student a {
   text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+@media (max-width:500px) {
+  .main2 .student a {
+    padding-bottom: 40px;
+  }
 }
 .main2 .student img {
   width: 60%;

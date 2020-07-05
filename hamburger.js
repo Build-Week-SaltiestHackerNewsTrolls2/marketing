@@ -1,17 +1,19 @@
 		const hamburger = document.querySelector(".buttonNav");
+		const hamburger2 = document.querySelector(".aboutNav");
 	  	const navLinks = document.querySelector(".main-nav");
 	  	const links = navLinks.querySelectorAll('.main-nav a');
 	  	const contentSalt = document.querySelector(".display1");
 	  	
 	function showNav() {
 	
-		if(document.querySelector('.main-nav').style.visibility === "hidden"){
-		document.querySelector('.main-nav').style.visibility='visible';
+		if(document.querySelector('.main-nav').style.display === "none"){
+		document.querySelector('.main-nav').style.display='inherit';
 	}
 	else{
-		document.querySelector('.main-nav').style.visibility='hidden';
+		document.querySelector('.main-nav').style.display='none';
 	}
 }
+
 function showContent() {
 	
 		if(document.querySelector('.exampleImages').style.display === "none"){
